@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pokemon Theme-Team</title>
+</head>
+<body>
+    <h1>Pokemon Team</h1>
+    <div class="container">
+        {% for pokemon in poke_team %}
+        <p>{{pokemon.name}}</p>
+        <img src="{{pokemon.sprites.front_default}}">
+        {% endfor %}
+    </div>
+</body>
+</html>
